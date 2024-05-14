@@ -241,61 +241,474 @@
         bảng, biểu đồ,
         liên kết và nhiều nội dung. </p>
 
-    <h2> 6 Cấu trúc tệp .html </h2>
-    Cấu trúc cơ bản của một tệp html bao gồm:
-    <ul>
-        <li> DOCTYPE </li>
-        <li> thẻ html
-            <ul>
-                <li> thẻ head </li>
-                <li> thẻ body. </li>
-            </ul>
-        </li>
-
-    </ul>
-    <pre>
-    <code>
-&lt;!DOCTYPE html&gt;
-&lt;html lang=&quot;en&quot;&gt;
-&lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-    
-&lt;/body&gt;
-&lt;/html&gt;
-    </code>
-</pre>
     <table>
         <thead>
-            <th> Danh </th>
-            <th> Dụng </th>
+            <th> Từ </th>
+            <th> Nghĩa </th>
+            <th> Minh họa </th>
+            <th> Chú thích </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td> HTML <br> (HyperTexT Markup Language) </td>
+                <td> Một ngôn ngữ đánh dấu xác định cấu trúc nội dung một trang vép. </td>
+                <td>
+                    Văn bản
+                    <p>
+                    <h2> Lão Tử </h2>
+                    Đạo khả đạo phi thường đạo <br>
+                    Danh khả danh phi thường danh <br>
+                    <i> (Trích Đạo Đức Kinh) </i>
+                    </p>
+                    trong ngôn ngữ đánh dấu HTML được viết là
+                    <pre>
+    <code>
+&lt;p&gt;
+&lt;h2&gt; Lão Tử &lt;/h2&gt;
+Đạo khả đạo phi thường đạo &lt;br&gt;
+Danh khả danh phi thường danh &lt;br&gt;
+&lt;i&gt; (Trích Đạo Đức Kinh) &lt;/i&gt;
+&lt;/p&gt;
+    </code>
+</pre>
+                </td>
+                <td> Nếu dùng <code> &lt;h1&gt; </code> tiêu đề sẽ lớn hơn, <code> &lt;h6&gt; </code> là nhỏ nhất. </td>
+            </tr>
+            <tr>
+                <td>
+                    ngôn ngữ đánh dấu <br>
+                    (markup languade)
+                </td>
+                <td> Là một hệ thống kí hiệu hoặc qui tắc được sử dụng để chú thích và định dạng văn bản hoặc dữ liệu
+                    trong một tài liệu. </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> Thẻ (Tag) </td>
+                <td> Là cái bắt đầu bằng dấu &lt; và kết thúc bằng dấu &gt;. </v>
+                </td>
+                <td>
+                    <ul>
+                        <li> <code> &lt;p&gt; </code> là một thẻ mở tên p. </li>
+                        <li> <code> &lt;/p&gt; </code> là một thẻ đóng tên p. </li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> Self-closing Tag <br> (thẻ tự đóng) </td>
+                <td> Hoạt động nột mình, không cần tới một cặp. </td>
+                <td> Ví dụ, <code> &lt;br&gt; </code> để ngắt dòng, cách viết khác là <code> &lt;br/&gt; </code>.
+                    <code> <hr> </code> để sinh một đường ngang, cách viết khác là <code> &lt;hr/&gt; </code>.
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> Phần tử (element) </td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2> 6 Cấu trúc tệp .html </h2>
+    Đưa ra cấu trúc tiêu chuẩn của tệp .html và phân tích các thành phần của nó.
+    <h2> Phần tử là gì, thẻ là gì </h2>
+    </ul>
+    <table>
+        <thead>
+            <th> Từ </th>
+            <th> Nghĩa </th>
+            <th> Minh họa </th>
             <th> Chú thích </th>
         </thead>
         <tbody>
             <tr>
                 <td> ! + Enter (Tab) </td>
-                <td> khởi tạo cấu trúc tiêu chuẩn của một tệp html </td>
+                <td> Khởi tạo cấu trúc tiêu chuẩn của một tệp .html. </td>
+                <td>
+                    <pre>
+                        <code>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang=&quot;en&quot;&gt;
+                    &lt;head&gt;
+                        &lt;meta charset=&quot;UTF-8&quot;&gt;
+                        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+                        &lt;title&gt;Document&lt;/title&gt;
+                    &lt;/head&gt;
+                    &lt;body&gt;
+                        
+                    &lt;/body&gt;
+                    &lt;/html&gt;
+                        </code>
+                    </pre>
+                </td>
+                <td>
+                    Cấu trúc cơ bản của một tệp html là
+                    <ul>
+                        <li> DOCTYPE </li>
+                        <li> thẻ html
+                            <ul>
+                                <li> thẻ head </li>
+                                <li> thẻ body. </li>
+                            </ul>
+                        </li>
+                </td>
             </tr>
             <tr>
                 <td> <code> &lt;!DOCTYPE html&gt; </code> </td>
-                <td> thông báo cho trình duyệt đây là một tài liệu HTML5 </td>
+                <td> Thông báo với trình duyệt đây là một tài liệu HTML5. </td>
+                <td></td>
                 <td> Document Type Declaration (khai báo loại tài liệu) </td>
             </tr>
             <tr>
-                <td> &lt; nội dung /&gt; </td>
-                <td> cấu trúc thẻ tự đóng </td>
-                <td> ví dụ <code> &lt;meta charset=&quot;UTF-8&quot;&gt; </code> </td>
+                <td> <code> &lt;html&gt;&lt;/html&gt; </code> </td>
+                <td> Là phần tử gốc, chứa tất cả các phần tử khác, định nghĩa toàn bộ cấu trúc của một trang HTML. </td>
+                <td> </td>
+                <td> Duy nhất trong mỗi tệp .html. </td>
             </tr>
             <tr>
-                <td> &lt;tên thẻ&gt; nội dung &lt;/tên thẻ&gt; </td>
-                <td> cấu trúc bao gồm thẻ mở và thẻ đóng </td>
-                <td> ví dụ <code> &lt;title&gt; Document &lt;/title&gt;</code> </td>
+                <td> <code> vi </code> </td>
+                <td> Mã ngôn ngữ của tiếng Việt. </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <code> &lt;head&gt;&lt;/head&gt; </code> </td>
+                <td> Chứa các thông tin dành cho trình duyệt và công cụ tìm kiếm (SEO), như tiêu đề trang, các siêu thẻ
+                    (meta tags), liên kết tới các tệp CSS và JavaScript. Chỉ tiêu đề trang hiển thị trực tiếp với người
+                    dùng. </td>
+                <td> </td>
+                <td> </td>
+            </tr>
+            <tr>
+                <th> <code> &lt;meta charset=&quot;UTF-8&quot;&gt; </code> </th>
+                <th> Chỉ định UTF-8 là bảng mã kí tự mà trình duyệt nên sử dụng để hiển thị trang. </th>
+                <th></th>
+                <th></th>
+            </tr>
+            <tr>
+                <td> <code> UTF-8 </code> </td>
+                <td> Một hệ thống mã hóa kí tự Unicode, có thể biểu diễn hầu hết các kí tự từ mọi ngôn ngữ trên thế
+                    giới. </td>
+                <td> "A" -> U+0041 -> 01000001 </td>
+                <td> Unicode Transformation Format - 8-bit </td>
+            </tr>
+            <tr>
+                <td> Kí tự Unicode </td>
+                <td> Một chuẩn quốc tế gán mã số, gọi là mã Unicode, cho các kí tự và biểu tượng từ nhiều ngôn ngữ và
+                    văn hóa khác nhau trên thế giới để máy tính có thể hiểu và xử lí chúng một cách thống nhất. </td>
+                <td> Kí tự "A" có mã Unicode là U+0041, còn "ô" là U+00F4 </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <code> &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt; </code>
+                </td>
+                <td> Tự động điều chỉnh kích thước trang phù hợp với màn hình từng thiết bị di động. </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <code> &lt;title&gt; Document &lt;/title&gt; </code> </td>
+                <td> Tiêu đề của trang này là Document </td>
+                <td></td>
+                <td> Tên tag trên trình duyệt là Document. </td>
+            </tr>
+            <tr>
+                <td> <code> &lt;-- viết ghi chú --&gt; </code> </td>
+                <td> Dùng viết ghi chú. </td>
+                <td></td>
+                <td> Ctrl + K + C -> <code> &lt;----&gt; </code>. Ctrl + K + U ngược lại. </td>
+            </tr>
+
+            <tr>
+                <td> <code> &lt;body&gt;&lt;/body&gt; </code> </td>
+                <td> Chứa toàn bộ nội dung sẽ hiển thị trên trang. </td>
+                <td></td>
+                <td></td>
             </tr>
         </tbody>
     </table>
+
+    <h2> Trang vép đầu tiên </h2>
+    <h3> Các thẻ cần dùng </h3>
+    <table>
+        <thead>
+            <tr>
+                <th> Từ </th>
+                <th> Nghĩa </th>
+                <th> Minh họa </th>
+                <th> Chú thích </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <code>
+                        &lt;h1&gt;&lt;/h1&gt; <br>
+                        &lt;h2&gt;&lt;/h2&gt; <br>
+                        &lt;h3&gt;&lt;/h3&gt; <br>
+                        &lt;h4&gt;&lt;/h4&gt; <br>
+                        &lt;h5&gt;&lt;/h5&gt; <br>
+                        &lt;h6&gt;&lt;/h6&gt; <br>
+                    </code>
+                </td>
+                <td> 6 cấp độ tiêu đề </td>
+                <td>
+                    <h1> Cấp độ 1 </h1>
+                    <h2> Cấp độ 2 </h2>
+                    <h3> Cấp độ 3 </h3>
+                    <h4> Cấp độ 4 </h4>
+                    <h5> Cấp độ 5 </h5>
+                    <h6> Cấp độ 6 </h6>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <code> &lt;p&gt;&lt;/p&gt; </code> </td>
+                <td> Viết đoạn văn. </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <code> &lt;b&gt;&lt;/b&gt; </code> </td>
+                <td> In đậm văn bản. </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <code> &lt;i&gt;&lt;/i&gt; </code> </td>
+                <td> In nghiêng văn bản. </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <code> &lt;u&gt;&lt;/u&gt; </code> </td>
+                <td> Gạch chân văn bản. </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <code> &lt;a&gt;&lt;/a&gt; </code> </td>
+                <td> Neo đường dẫn (anchor). </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <code> &lt;img&gt;&lt;/igm&gt; </code> </td>
+                <td> Đính hình ảnh. </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <code> &lt;ul&gt;&lt;/ul&gt; </code> </td>
+                <td> Danh sách không thứ tự (un-ordered list) </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <code> &lt;ol&gt;&lt;/ol&gt; </code> </td>
+                <td> Danh sách có thứ tự (ordered list). </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"> HTML elements reference </>
+                </td>
+                <td> Liệt kê các phần tử được tạo bằng thẻ. </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2> Upload on Show Live Server Preview </h2>
+    Manage/Settings/Files: Auto Save = afterDelay; Files: Auto Save Delay = 5 <br>
+    Manage/Settings/Live Server, Setting: Wait = 3 <br>
+    Manage/Settings/Live Server, Setting: Full Reload = tít <br>
+    <table>
+        <thead>
+            <th> Từ </th>
+            <th> Nghĩa </th>
+            <th> Minh họa </th>
+            <th> Chú thích </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td> Multiple cursors </td>
+                <td> Tính năng cho phép mở nhiều con trỏ cùng lúc để chỉnh sửa đồng thời. Trong VS Code, dùng <b>Alt +
+                        Click chuột trái</b> hoặc <b>Ctrl + Alt + Mũi tên lên/xuống</b>. </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <a href="https://www.diffchecker.com/"> Diffchecker </a> </td>
+                <td> Công cụ trực tuyến cho phép so sánh sự khác biệt giữa hai tệp tin hoặc hai đoạn văn bản. </td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2> Danh sách </h2>
+    <table>
+        <thead>
+            <th> Từ </th>
+            <th> Nghĩa </th>
+            <th> Minh họa </th>
+            <th> Chú thích </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td> li </td>
+                <td> thẻ con trực tiếp của ul, ol </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> ul </td>
+                <td> danh sách không thứ tự </td>
+                <td>
+                    <ul>
+                        <li> </li>
+                        <li> </li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> ol </td>
+                <td> có thứ tự </td>
+                <td>
+                    <ol>
+                        <li> </li>
+                        <li> </li>
+                    </ol>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <a href="https://emmet.io/"> Emmet </a> </td>
+                <td> Công cụ hỗ trợ viết mã HTML và CSS nhanh chóng. </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <a href="https://docs.emmet.io/cheat-sheet/"> Emmet Cheat Sheet</a> </td>
+                <td> Một tài liệu hoặc bảng hướng dẫn sử dụng Emmet, cung cấp danh sách các đoạn mã tắt và cú pháp Emmet
+                    cùng ví dụ minh họa. </td>
+                <td>
+                    <pre>
+<code>
+<b>ul&gt;li.item$*5</b>
+&lt;ul&gt;
+    &lt;li class=&quot;item1&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item2&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item3&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item4&quot;&gt;&lt;/li&gt;
+    &lt;li class=&quot;item5&quot;&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</code>
+</pre>
+                </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <code> ul>li*2 </code> </td>
+                <td>
+                    <pre>
+    <code>
+&lt;ol&gt;
+    &lt;li&gt; &lt;/li&gt;
+    &lt;li&gt; &lt;/li&gt;
+&lt;/ol&gt;
+    </code>
+</pre>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <code> ul>li*2{Tôi là $} </code> </td>
+                <td>
+                    <pre>
+<code>
+&lt;ul&gt;
+    &lt;li&gt;Tôi là 1&lt;/li&gt;
+    &lt;li&gt;Tôi là 2&lt;/li&gt;
+&lt;/ul&gt;
+</code>
+</pre>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+
+            <tr>
+                <td>
+                    <pre>
+<code>
+&lt;ol reversed&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</code>
+</pre>
+                </td>
+                <td>
+                    <ol reversed>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>
+<code>
+&lt;ol type=&quot;a&quot;&gt;
+    &lt;li&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</code>
+</pre>
+                </td>
+                <td>
+                    <ol type="a">
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </td>
+                <td></td>
+                <td> còn có A, i, I </td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <ol type="I">
+        <li> </li>
+        <li>
+            <ol>
+                <li> </li>
+                <li>
+                    <ol type="a"> 
+                        <li> </li>
+                        <li> </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li> </li>
+    </ol>
+
+
+
+
 </body>
 
 </html>
