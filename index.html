@@ -5,6 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> HTML VÀ CSS </title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
 </head>
 
 <body>
@@ -686,27 +700,155 @@ Danh khả danh phi thường danh &lt;br&gt;
                 <td></td>
                 <td> còn có A, i, I </td>
             </tr>
+
+            <tr>
+                <td>
+                    <pre>
+<code>
+&lt;ol type=&quot;I&quot;&gt;
+    &lt;li&gt; &lt;/li&gt;
+    &lt;li&gt;
+        &lt;ol&gt;
+            &lt;li&gt; &lt;/li&gt;
+            &lt;li&gt;
+                &lt;ol type=&quot;a&quot;&gt; 
+                    &lt;li&gt; &lt;/li&gt;
+                    &lt;li&gt; &lt;/li&gt;
+                &lt;/ol&gt;
+            &lt;/li&gt;
+        &lt;/ol&gt;
+    &lt;/li&gt;
+    &lt;li&gt; &lt;/li&gt;
+&lt;/ol&gt;
+</code>
+</pre>
+                </td>
+                <td>
+                    <ol type="I">
+                        <li> </li>
+                        <li>
+                            <ol>
+                                <li> </li>
+                                <li>
+                                    <ol type="a">
+                                        <li> </li>
+                                        <li> </li>
+                                    </ol>
+                                </li>
+                            </ol>
+                        </li>
+                        <li> </li>
+                    </ol>
+                </td>
+                <td></td>
+                <td></td>
+            </tr>
         </tbody>
 
     </table>
 
-    <ol type="I">
-        <li> </li>
-        <li>
-            <ol>
-                <li> </li>
-                <li>
-                    <ol type="a"> 
-                        <li> </li>
-                        <li> </li>
-                    </ol>
-                </li>
-            </ol>
-        </li>
-        <li> </li>
-    </ol>
+    <h2> Thẻ <code> &lt;a&gt; </code> </h2>
+    <table>
+        <thead>
+            <th> Từ </th>
+            <th> Nghĩa </th>
+            <th> Minh họa </th>
+            <th> Chú thích </th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <code> &lt;a href=&quot;&quot;&gt;&lt;/a&gt; </code>
+                </td>
+                <td> Tạo liên kết trong hoặc ngoài trang. </td>
+                <td> Cái này,
+                    <a href=""> Click vào đây để tải lại trang này </a>,
+                    có được từ
+                    <pre>
+<code>
+&lt;a href=&quot;&quot;&gt; Click vào đây để tải lại trang này &lt;/a&gt;
+</code>
+</pre>
+                </td>
+                <td> a là viết tắt của anchor (neo) </td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>
+<code>
+&lt;a href=&quot;#&quot;&gt; Click vào đây để tải lại trang này &lt;/a&gt;
+</code>
+</pre>
+                </td>
+                <td> <a href=""> Click vào đây để trở về đầu trang </a> </td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <pr><code>&lt;a href=&quot;https://www.google.com/&quot;&gt; Google &lt;/a&gt;</code></pr>
+                </td>
+                <td>
+                    <a href="https://www.google.com/" target="_self"> Google </a>
+                </td>
+                <td></td>
+                <td>
+                    <ul>
+                        <li> <code> target="_self" </code> mở trang mới tại trang hiện tại, mặc định </li>
+                        <li> <code> target="_blank" </code> mở trang mới sang tag mới </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td> <code> &lt;a href=&quot;tel:0765028176&quot;&gt; Ấn vào đây để gọi 0765028176 &lt;/a&gt; </code>
+                </td>
+                <td> gọi điện </td>
+                <td> <a href="tel:0765028176"> Ấn vào đây để gọi 0765028176 </a> </td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> <code> href=&quot;mailto:example@example.com?subject=Vấn đề quan trọng&amp;body=Xin chào,%0D%0ATôi muốn hỏi về vấn đề quan trọng.%0D%0ACảm ơn!&quot;&gt;Gửi email &lt;/a&gt; </code>
+                </td>
+                <td> <a
+                        href="mailto:example@example.com?subject=Vấn%20đề%20quan%20trọng&body=Xin%20chào,%0D%0ATôi%20muốn%20hỏi%20về%20vấn%20đề%20quan%20trọng.%0D%0ACảm%20ơn!">Gửi
+                        email</a>
+                </td>
+                <td>
+                    <ul>
+                        <li> Người nhận: 'example@example.com'; </li>
+                        <li> Người gửi: bất kì ai nhấp vào liên kết; </li>
+                        <li> Trong cửa sổ soạn thảo email sẽ có sẵn:
+                            <ul>
+                                <li> To: 'example@example.com'; </li>
+                                <li> Subject: 'Vấn đề quan trọng'; </li>
+                                <li> Body: 'Xin chào, <br>
+                                    Tôi muốn hỏi về vấn đề quan trọng. <br>
+                                    Cảm ơn!'.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 
-
+    <h2> Thẻ img </h2>
+    <table>
+        <thead>
+            <th> Thuật ngữ </th>
+            <th> Mô tả </th>
+            <th> Minh họa </th>
+            <th></th>
+        </thead>
+        <tbody>
+            <td> <code> &lt;img&gt; </code> </td>
+            <td>Chèn hình </td>
+            <td></td>
+            <td></td>
+        </tbody>
+    </table>
 
 
 </body>
